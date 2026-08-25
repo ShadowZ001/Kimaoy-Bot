@@ -124,3 +124,25 @@ MONGODB_URI=mongodb+srv://...
 ```bash
 node index.js
 ```
+
+---
+
+<div align="center">
+
+## ✦ Kimaoy Devs
+
+*Built for marketplace protection. Designed for ultimate CV2 styling.*
+
+<a href="https://discord.gg/your-invite-here"><img src="https://invidget.switchblade.xyz/your-invite-here" alt="Discord Server"/></a>
+<br/>
+
+<a href="https://discord.gg/your-invite-here"><img src="https://img.shields.io/badge/Discord-Join_Server-5865F2?style=for-the-badge&logo=discord&logoColor=white"/></a>
+<a href="https://github.com/ShadowZ001"><img src="https://img.shields.io/badge/GitHub-ShadowZ001-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="https://nexiohost.in"><img src="https://img.shields.io/badge/⭐%20PREMIUM%20HOSTING-NexioHost-FFD700?style=for-the-badge&labelColor=1a1a2e&color=FFD700&logoColor=FFD700"/></a>
+
+<br/>
+<br/>
+
+© 2026 Kimaoy Devs — MIT License
+
+</div>
