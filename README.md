@@ -9,7 +9,7 @@
  ╚═╝  ╚═╝╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝    ╚═╝   
 ```
 
-<h3>A feature-rich Discord CV2 Builder bot</h3>
+<h3>A premium Discord bot for Sellers, Middlemen, and Ticket Management</h3>
 
 <a href="https://nexiohost.in"><img src="https://img.shields.io/badge/⭐%20PREMIUM%20HOSTING-NexioHost-FFD700?style=for-the-badge&labelColor=1a1a2e&color=FFD700&logoColor=FFD700"/></a>
 
@@ -29,43 +29,57 @@
 
 ## ✦ Overview
 
-Kimaoy-Bot is a fully-featured Discord bot designed to manage and send Discord v10 CV2 (Component V2) messages natively in your server. Built with `discord.js v14`, `Node.js`, and `MongoDB`.
+**Kimaoy-Bot** is a highly specialized, feature-rich Discord bot designed specifically for marketplace servers. It provides an all-in-one ecosystem for **Ticket Management**, **Seller Verification & Vouches**, **Middleman (MM) Enforcement**, and a beautiful interactive **CV2 Embed Builder**. 
 
-```
-Kimaoy-Bot/
-├── 🤖  cogs/                  All bot features (commands, components, events)
-│   ├── components/            CV2 string select menus and modals
-│   └── slash/                 Slash commands (e.g. /tos)
-├── 📚  events/                Event handlers (ready, interactionCreate, messageCreate)
-├── 🛠️  utils/                 Shared utilities (cv2BuilderHelper)
-├── 🗄️  schemas/               MongoDB mongoose schemas
-└── 📝  index.js               Entry point
-```
+Built with `discord.js v14` and powered by `MongoDB`, the bot enforces safe trading environments while giving admins ultimate control over their server's aesthetics.
 
 ---
 
-## ✦ Features
+## ✦ Core Features & Commands
 
 <table>
 <tr>
 <td width="50%">
 
-**🛡️ CV2 Message Builder**
-- Interactive CV2 message builder
-- Complete control over title, description, color, image, and author
-- Real-time preview of the embedded message
-- Dropdown (StringSelectMenu) based interface
-- Channel selector integration
+**🛍️ Seller & Marketplace System**
+- **`/completedeal`**: The flagship command for sellers to finalize a ticket. Automatically prompts the buyer for a rating, calculates middleman involvement, and adds Shiba vouches to the seller's profile.
+- **`/seller`**: View or manage seller profiles, trust ratings, and vouch counts.
+- **`/forcevouch`**: Admin command to manually adjust a seller's vouches if required.
+- **`/tos`**: Displays the server's strictly enforced Terms of Service using beautifully integrated custom emojis.
+- **Middleman (MM) Enforcement**: Built-in rules requiring buyers and sellers to accept MMs for safe transactions.
 
 </td>
 <td width="50%">
 
-**🎵 Utilities & Tools**
-- Auto-sync Application emojis
-- `/tos` command with strictly enforced rules for sellers
-- Support for complex Middleman (MM) verification & vouches
-- Custom emojis flawlessly injected into markdown headers
-- Clean, comment-free codebase
+**🎫 Advanced Ticket System**
+- **`/ticketpanel`** *(Slash & Prefix)*: Deploys a fully interactive UI panel for users to open specific tickets (Nitro, Decorations, Server Boosts, Exchanges, Reports).
+- **Ticket Controls**: Inside every ticket, users and staff get access to Dropdown (StringSelectMenu) interfaces to easily:
+  - Select Payment Methods (Crypto, PayPal, etc.)
+  - Set Order Quantities
+  - Claim / Unclaim / Close tickets
+  - Request a Middleman (MM)
+  - Add / Remove users from the ticket channel
+  - Save full transcripts of the trade
+
+</td>
+</tr>
+<tr>
+<td>
+
+**🎨 CV2 Interactive Embed Builder**
+- **`/embed`**: Launches a live, interactive workspace to build Discord v10 (CV2) embeds natively in chat.
+- **Dropdown Interface**: Edit the title, description, colors, footers, and author fields entirely via `StringSelectMenus` (no command spam needed).
+- **Live Preview**: See exactly how your embed looks as you build it.
+- **Channel Selector**: Dispatch your finished creation directly to any channel in the server.
+
+</td>
+<td>
+
+**⚙️ Utilities & Backend**
+- **Auto-Sync Emojis**: Scripted fallback logic to perfectly mirror custom emojis (Shibas, Warnings, Ticks, Crypto logos) across multiple backend servers.
+- **Clean Architecture**: 100% comment-free "raw" source code design.
+- **`/feedback`**: Interactive modal for users to submit server feedback and suggestions.
+- **`!remind`**: Utility prefix command for reminders.
 
 </td>
 </tr>
@@ -77,15 +91,15 @@ Kimaoy-Bot/
 
 | Requirement | Version / Notes |
 |---|---|
-| Node.js | 18 or higher |
-| MongoDB URI | For database connection |
-| Discord bot token | — |
+| Node.js | v18.0.0 or higher |
+| MongoDB Cluster | A free MongoDB Atlas URI for saving tickets/vouches |
+| Discord Bot Token | Enabled `Message Content`, `Server Members`, and `Presence` intents |
 
 ---
 
-## ✦ Setup
+## ✦ Setup & Installation
 
-**1 — Clone the repo**
+**1 — Clone the repository**
 
 ```bash
 git clone https://github.com/ShadowZ001/Kimaoy-Bot.git
@@ -99,11 +113,11 @@ npm install
 ```
 
 **3 — Configure Environment**
-Create a `.env` file and configure it:
+Create a `.env` file in the root directory and configure it:
 ```env
-TOKEN=your_bot_token
-CLIENT_ID=your_client_id
-MONGODB_URI=your_mongodb_uri
+TOKEN=your_bot_token_here
+CLIENT_ID=your_bot_client_id_here
+MONGODB_URI=mongodb+srv://...
 ```
 
 **4 — Start the bot**
