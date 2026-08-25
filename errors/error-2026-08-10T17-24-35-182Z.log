@@ -1,0 +1,13 @@
+Timestamp: 2026-08-10T17:24:35.187Z
+Context: Interaction Handling: ticketpanel
+Error Name: DiscordAPIError[40060]
+Error Message: Interaction has already been acknowledged.
+Stack Trace:
+DiscordAPIError[40060]: Interaction has already been acknowledged.
+    at handleErrors (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:791:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async BurstHandler.runRequest (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:898:23)
+    at async _REST.request (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:1342:22)
+    at async ChatInputCommandInteraction.reply (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\discord.js\src\structures\interfaces\InteractionResponses.js:193:22)
+    at async Object.execute (C:\Users\Administrator\Documents\ksiye8 Bot\cogs\slash\ticketpanel.js:97:9)
+    at async Object.execute (C:\Users\Administrator\Documents\ksiye8 Bot\events\interactionCreate.js:11:17)

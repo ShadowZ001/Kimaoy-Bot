@@ -1,0 +1,16 @@
+Timestamp: 2026-08-10T14:40:25.297Z
+Context: Ticket Creation
+Error Name: DiscordAPIError[50035]
+Error Message: Invalid Form Body
+components[0].components[1].items[0].media[BASE_TYPE_REQUIRED]: This field is required
+Stack Trace:
+DiscordAPIError[50035]: Invalid Form Body
+components[0].components[1].items[0].media[BASE_TYPE_REQUIRED]: This field is required
+    at handleErrors (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:791:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async SequentialHandler.runRequest (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:1198:23)
+    at async SequentialHandler.queueRequest (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:1029:14)
+    at async _REST.request (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:1342:22)
+    at async TextChannel.send (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\Administrator\Documents\ksiye8 Bot\cogs\buttons\confirm_ticket.js:236:13)
+    at async Object.execute (C:\Users\Administrator\Documents\ksiye8 Bot\events\interactionCreate.js:22:17)

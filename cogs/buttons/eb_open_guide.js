@@ -1,0 +1,1 @@
+const { guidePages, getGuideComponents } = require('../../utils/guideData');module.exports = {    customId: 'eb_open_guide',    async execute(interaction) {        await interaction.reply({            embeds: [guidePages[0]],            components: [getGuideComponents(0)],            ephemeral: true        });    }};

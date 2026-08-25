@@ -1,0 +1,19 @@
+Timestamp: 2026-08-10T14:32:09.956Z
+Context: Interaction Handling: order_pay_nitro_boost_custom
+Error Name: DiscordAPIError[50035]
+Error Message: Invalid Form Body
+data.components[0].components[2].components[0].options[0].emoji.name[COMPONENT_INVALID_EMOJI]: Invalid emoji
+data.components[0].components[2].components[0].options[3].emoji.name[COMPONENT_INVALID_EMOJI]: Invalid emoji
+data.components[0].components[2].components[0].options[4].emoji.name[COMPONENT_INVALID_EMOJI]: Invalid emoji
+Stack Trace:
+DiscordAPIError[50035]: Invalid Form Body
+data.components[0].components[2].components[0].options[0].emoji.name[COMPONENT_INVALID_EMOJI]: Invalid emoji
+data.components[0].components[2].components[0].options[3].emoji.name[COMPONENT_INVALID_EMOJI]: Invalid emoji
+data.components[0].components[2].components[0].options[4].emoji.name[COMPONENT_INVALID_EMOJI]: Invalid emoji
+    at handleErrors (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:791:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async BurstHandler.runRequest (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:898:23)
+    at async _REST.request (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:1342:22)
+    at async StringSelectMenuInteraction.update (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\discord.js\src\structures\interfaces\InteractionResponses.js:354:22)
+    at async Object.execute (C:\Users\Administrator\Documents\ksiye8 Bot\cogs\components\select_menus\order_pay.js:53:13)
+    at async Object.execute (C:\Users\Administrator\Documents\ksiye8 Bot\events\interactionCreate.js:33:17)

@@ -1,0 +1,13 @@
+Timestamp: 2026-08-14T16:08:03.422Z
+Context: Ticket Creation
+Error Name: DiscordAPIError[10062]
+Error Message: Unknown interaction
+Stack Trace:
+DiscordAPIError[10062]: Unknown interaction
+    at handleErrors (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:791:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async BurstHandler.runRequest (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:898:23)
+    at async _REST.request (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:1342:22)
+    at async StringSelectMenuInteraction.reply (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\discord.js\src\structures\interfaces\InteractionResponses.js:193:22)
+    at async Object.execute (C:\Users\Administrator\Documents\ksiye8 Bot\cogs\components\select_menus\ticket_select.js:198:13)
+    at async Object.execute (C:\Users\Administrator\Documents\ksiye8 Bot\events\interactionCreate.js:33:17)

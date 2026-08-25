@@ -1,0 +1,15 @@
+Timestamp: 2026-08-25T00:45:03.215Z
+Context: Interaction Handling: embed
+Error Name: DiscordAPIError[50035]
+Error Message: Invalid Form Body
+data.content[MESSAGE_CANNOT_USE_LEGACY_FIELDS_WITH_COMPONENTS_V2]: The 'content' field cannot be used when using MessageFlags.IS_COMPONENTS_V2
+Stack Trace:
+DiscordAPIError[50035]: Invalid Form Body
+data.content[MESSAGE_CANNOT_USE_LEGACY_FIELDS_WITH_COMPONENTS_V2]: The 'content' field cannot be used when using MessageFlags.IS_COMPONENTS_V2
+    at handleErrors (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:791:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async BurstHandler.runRequest (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:898:23)
+    at async _REST.request (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\rest\dist\index.js:1342:22)
+    at async ChatInputCommandInteraction.reply (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\discord.js\src\structures\interfaces\InteractionResponses.js:193:22)
+    at async Object.execute (C:\Users\Administrator\Documents\ksiye8 Bot\cogs\slash\embed.js:67:9)
+    at async Object.execute (C:\Users\Administrator\Documents\ksiye8 Bot\events\interactionCreate.js:11:17)

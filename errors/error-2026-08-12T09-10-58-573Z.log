@@ -1,0 +1,16 @@
+Timestamp: 2026-08-12T09:10:58.608Z
+Context: Interaction Handling: eb_modal_author
+Error Name: Error
+Error Message: Received one or more errors
+Stack Trace:
+Error: Received one or more errors
+    at _ObjectValidator.handleIgnoreStrategy (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@sapphire\shapeshift\dist\cjs\index.cjs:2136:70)
+    at _ObjectValidator.handleStrategy (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@sapphire\shapeshift\dist\cjs\index.cjs:1983:47)
+    at _ObjectValidator.handle (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@sapphire\shapeshift\dist\cjs\index.cjs:2089:17)
+    at _ObjectValidator.parse (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@sapphire\shapeshift\dist\cjs\index.cjs:972:90)
+    at EmbedBuilder.setAuthor (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\@discordjs\builders\dist\index.js:311:26)
+    at Object.execute (C:\Users\Administrator\Documents\ksiye8 Bot\cogs\modals\eb_modal_author.js:14:22)
+    at Object.execute (C:\Users\Administrator\Documents\ksiye8 Bot\events\interactionCreate.js:43:29)
+    at Client.<anonymous> (C:\Users\Administrator\Documents\ksiye8 Bot\index.js:114:62)
+    at Client.emit (node:events:509:28)
+    at InteractionCreateAction.handle (C:\Users\Administrator\Documents\ksiye8 Bot\node_modules\discord.js\src\client\actions\InteractionCreate.js:103:12)

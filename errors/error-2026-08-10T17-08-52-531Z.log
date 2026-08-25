@@ -1,0 +1,20 @@
+Timestamp: 2026-08-10T17:08:52.532Z
+Context: Handler Loading
+Error Name: SyntaxError
+Error Message: Unexpected token ')'
+Stack Trace:
+C:\Users\Administrator\Documents\ksiye8 Bot\cogs\slash\seller.js:21
+        ),
+        ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (node:internal/modules/cjs/loader:1804:18)
+    at Module._compile (node:internal/modules/cjs/loader:1845:20)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at loadHandlers (C:\Users\Administrator\Documents\ksiye8 Bot\index.js:48:33)
+    at init (C:\Users\Administrator\Documents\ksiye8 Bot\index.js:124:9)
