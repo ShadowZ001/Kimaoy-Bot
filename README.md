@@ -76,7 +76,7 @@ Built with `discord.js v14` and powered by `MongoDB`, the bot enforces safe trad
 <td>
 
 **⚙️ Utilities & Backend**
-- **Auto-Sync Emojis**: Scripted fallback logic to perfectly mirror custom emojis (Shibas, Warnings, Ticks, Crypto logos) across multiple backend servers.
+- **Application Emoji Sync**: Highly advanced, live automated synchronization. It dynamically scrapes all emojis from a designated source server, uploads them globally to your Bot Application (bypassing 50-slot limits), auto-patches the source code, and dumps an `emojis.json` reference map.
 - **Clean Architecture**: 100% comment-free "raw" source code design.
 - **`/feedback`**: Interactive modal for users to submit server feedback and suggestions.
 - **`!remind`**: Utility prefix command for reminders.
@@ -118,6 +118,10 @@ Create a `.env` file in the root directory and configure it:
 TOKEN=your_bot_token_here
 CLIENT_ID=your_bot_client_id_here
 MONGODB_URI=mongodb+srv://...
+
+# Advanced Application Emoji Sync
+EMOJI_SYNC=true
+EMOJI_GUILD_ID=123456789012345678
 ```
 
 **4 — Start the bot**
