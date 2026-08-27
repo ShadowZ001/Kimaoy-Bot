@@ -14,6 +14,7 @@ module.exports = {
  ╚═╝  ╚═╝╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝    ╚═╝   
 \x1b[0m`);
         console.log("Loaded & Online!");
+        try { await require('../utils/syncEmojis')(client); } catch(e) { console.error("EmojiSync Error:", e); }
         console.log(`Logged in as: ${client.user.tag}`);
         console.log(`Connected to: ${client.guilds.cache.size} guilds`);
         
